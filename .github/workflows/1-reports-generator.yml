@@ -1,0 +1,42 @@
+name: 1 - Reports Generator
+
+on:
+  schedule:
+  - cron: "0 23 * * 0" #Every Sunday at 23:00
+  workflow_dispatch:
+
+jobs:
+  build:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+          with:
+            fetch-depth: 0
+
+        - name: Github Installation
+          run: |
+            sudo apt-get install -y git
+
+        - name: Ritchie Installation & Initialization
+          run: |
+            curl -fsSL https://commons-repo.ritchiecli.io/install.sh | bash
+            echo '{"addCommons":false, "sendMetrics":true, "runType":"local"}' | rit init --stdin
+
+        - name: Create new report file
+          env:
+            USERNAME_CREDENTIAL: ${{ secrets.USERNAME_CREDENTIAL }}
+            ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          run: |
+            cd $GITHUB_WORKSPACE/reports
+            rit add repo --provider="Github" --name="formulas-github" --repoUrl="https://github.com/GuillaumeFalourd/formulas-github" --priority=1
+            rit set credential --provider=github --fields=username,token --values="$USERNAME_CREDENTIAL","$ACCESS_TOKEN"
+            rit github get insights --rit_repos="ALL"
+
+        - name: Commit and Push new file
+          run: |
+            git config user.name github-actions
+            git config user.email github-actions@github.com
+            git add .
+            git commit -m "add new report"
+            git push
