@@ -8,7 +8,7 @@ Reports generated automatically using CRON job with this [github action workflow
 - **Uniques 👁**
 - **Clones 📥**
 
-## Insights from the moment the automation is exceuted 
+## Insights from the moment the automation is executed 
 
 - **Contributores 👥**
 - **Forks 🔀**
