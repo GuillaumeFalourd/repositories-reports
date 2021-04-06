@@ -4,10 +4,15 @@ Reports generated automatically using CRON job with this [github action workflow
 
 ## Insights from last 14 days
 
-**Views | Uniques | Clones**
+**👀 Views**
+**👁 Uniques**
+**📥 Clones**
 
 ## Insights from the moment the automation is exceuted 
 
-**Contributores | Forks | Stars | Watchers**
+**👥 Contributores**
+**🔀 Forks**
+**⭐️ Stars**
+**🎥 Watchers**
 
 ![Sample](/docs/report-sample.png)
