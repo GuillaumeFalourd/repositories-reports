@@ -12,24 +12,26 @@ This repository uses [Github Actions](https://github.com/features/actions) and [
 
 ## Sample of generated reports
 
-This repository will gather on the `/reports` directory weekly reports such as this one:
+This repository will gather on the `/reports` directory weekly reports with the following datas:
 
-### Insights from last 14 days
+### 🕵️ Insights from last 14 days
 
 - Views 👀
 - Uniques 👁
 - Clones 📥
 
-### Insights from the moment the automation is executed 
+### 🕵️ Insights from the moment the automation is executed 
 
 - Contributores 👥
 - Forks 🔀
 - Stars ⭐️
 - Watchers 🎥
 
+Reports will look like this one:
+
 ![Sample](/docs/report-sample.png)
 
-## Want to get your repo-reports?
+## ♻️ Want to get your repo-reports?
 
 - **Create a new repository** (you can clone or fork this one)
 
