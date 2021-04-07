@@ -31,7 +31,7 @@ This repository will gather on the `/reports` directory weekly reports such as t
 
 ## Want to get your repo-reports?
 
-- Create a new repository (you can eventually fork this one)
+- **Create a new repository** (you can clone or fork this one)
 
 - Add 2 secrets on the new repository ([here is a reference](https://docs.github.com/en/actions/reference/encrypted-secrets)):
   - a secret `ACCESS_TOKEN` (you can create one [here](https://github.com/settings/tokens))
