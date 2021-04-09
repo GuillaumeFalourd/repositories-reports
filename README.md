@@ -35,6 +35,12 @@ Reports will look like this one:
 
 - **Create a new repository** (you can clone or fork this one)
 
+```bash
+git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-automation.git
+```
+
 - Add 2 secrets on the new repository ([here is a reference](https://docs.github.com/en/actions/reference/encrypted-secrets)):
   - a secret `ACCESS_TOKEN` (you can create one [here](https://github.com/settings/tokens))
   - a secret `USERNAME_CREDENTIAL` with your Github User account (`GuillaumeFalourd` in my case)
+
+*Note: [You can also use Ritchie CLI to add new secrets to your repository](https://github.com/GuillaumeFalourd/formulas-github/tree/master/github/add/secret)*
