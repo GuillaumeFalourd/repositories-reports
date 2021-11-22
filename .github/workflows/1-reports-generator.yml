@@ -35,9 +35,4 @@ jobs:
             rit github get insights --rit_repos="ALL"
 
         - name: Commit and Push new file
-          run: |
-            git config user.name github-actions
-            git config user.email github-actions@github.com
-            git add .
-            git commit -m "add new report"
-            git push
+          uses: GuillaumeFalourd/git-commit-push@v1
