@@ -2,7 +2,7 @@ name: 1 - Reports Generator
 
 on:
   schedule:
-  - cron: "55 23 * * 0" #Every Sunday at 23:55
+  - cron: "55 23 * * MON" #Every Monday at 23:55
 #  - cron: "55 23 1,15 * *" #Every 2 weeks on day 1 and 15 at 23:55
   workflow_dispatch:
 
