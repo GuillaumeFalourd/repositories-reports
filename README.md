@@ -36,7 +36,7 @@ Reports will look like this one:
 - **Create a new repository** (you can clone or fork this one)
 
 ```bash
-git clone https://github.com/GuillaumeFalourd/linkedin-jobs-by-city-reports-automation.git
+git clone https://github.com/GuillaumeFalourd/repositories-reports.git
 ```
 
 - Add 2 secrets on the new repository ([here is a reference](https://docs.github.com/en/actions/reference/encrypted-secrets)):
